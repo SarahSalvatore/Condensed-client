@@ -1,4 +1,4 @@
-const URL_API = "http://localhost:3000/condense";
+const URL_API = "https://condensed-api.onrender.com/condense";
 
 const copyUrl = (targetUrl) => {
   document.addEventListener("click", (event) => {
