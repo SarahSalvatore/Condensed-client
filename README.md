@@ -2,7 +2,7 @@
 
 ![JavaScript badge](https://img.shields.io/badge/build-JavaScript-yellow) ![Node Badge](https://img.shields.io/badge/build-Node.js-green) ![MongoDB badge](https://img.shields.io/badge/build-MongoDB-brightgreen)
 
-![Site Screenshot](public/images/readme_pic1.jpg)
+![Site Screenshot](dist/public/images/readme_pic1.jpg)
 
 ## Live Demo
 
