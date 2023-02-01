@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./webmanifest" />
+    <title>Condensed - URL Shortener</title>
+    <link rel="stylesheet" href="../src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <header class="header">
+          <h1>Condensed</h1>
+          <p>
+            Transform your URLs into custom, concise links that can be used
+            anywhere.
+          </p>
+        </header>
+        <main>
+          <p class="instruction">
+            Please include the complete url (ex: http://www.google.com).
+          </p>
+          <form class="urlForm">
+            <div class="formContent">
+              <input
+                type="text"
+                name="url"
+                id="url"
+                placeholder="Enter your url here."
+              />
+              <button>Shorten URL</button>
+            </div>
+          </form>
+          <div class="urlContent">
+            <h2>URLs:</h2>
+            <div class="urlLink"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
