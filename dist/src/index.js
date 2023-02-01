@@ -57,7 +57,7 @@ urlForm.addEventListener("submit", async (event) => {
       displayUrl(response.newUrl);
       copyUrl(response.newUrl);
     } else {
-      content.innerHTML = response.statusText;
+      displayUrl("Something went wrong");
     }
   } catch (err) {
     console.error(err);
