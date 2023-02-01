@@ -1,4 +1,4 @@
-const URL_API = "https://condensed-api.onrender.com/condense";
+const URL_API = "https://condensed-api.onrender.com";
 
 const copyUrl = (targetUrl) => {
   document.addEventListener("click", (event) => {
@@ -40,7 +40,7 @@ urlForm.addEventListener("submit", async (event) => {
 
   // Make request to API
   try {
-    let request = await fetch(URL_API, {
+    let request = await fetch(`${URL_API}/condense`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
