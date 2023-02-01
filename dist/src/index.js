@@ -51,7 +51,7 @@ urlForm.addEventListener("submit", async (event) => {
     });
 
     let response = await request.json();
-    console.log(`response: ${response}`);
+    console.log(`response: ${response.newUrl}`);
 
     if (response.newUrl) {
       displayUrl(response.newUrl);
