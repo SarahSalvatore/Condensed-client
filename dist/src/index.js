@@ -37,8 +37,6 @@ const urlForm = document.querySelector(".urlForm");
 urlForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   let formData = new FormData(urlForm);
-  console.log(`Form data: ${formData}`);
-  console.log(`Form data url: ${formData.get("url")}`);
 
   // Make request to API
   try {
@@ -51,7 +49,6 @@ urlForm.addEventListener("submit", async (event) => {
     });
 
     let response = await request.json();
-    console.log(`response: ${response.newUrl}`);
 
     if (response.newUrl) {
       displayUrl(response.newUrl);
