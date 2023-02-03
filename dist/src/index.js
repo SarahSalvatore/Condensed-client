@@ -37,6 +37,12 @@ const urlForm = document.querySelector(".urlForm");
 urlForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   let formData = new FormData(urlForm);
+  let url = formData.get("url");
+
+  // Check that the url entered includes protocol
+  if (!url.startsWith("http")) {
+    return alert("Please enter the complete url, including the HTTP protocol.");
+  }
 
   // Make request to API
   try {
@@ -45,7 +51,7 @@ urlForm.addEventListener("submit", async (event) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ url: formData.get("url") }),
+      body: JSON.stringify({ url: url }),
     });
 
     let response = await request.json();
